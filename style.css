@@ -1,0 +1,313 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+	background-color: #dadada;
+	font-family: 'Time new roman', 'Trebuchet MS', Arial, sans-serif;
+	color: #181818;
+}
+
+#bloc_page
+{
+	background-color: white;
+	width: 951px; /*largeur de la page*/
+	margin: auto; /*la page sera toujours centrée*/
+}
+
+section h1, nav a, #photos_combegrand h1
+{
+	font-family: Dayrom, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.3em;
+}
+
+/* Header */
+
+#haut-page
+{
+	background: url('images/banniere.jpg');
+	height: 230px;
+	position: relative;
+}
+
+.langues, .titre-principal
+{
+	display: inline-block;
+	position: absolute;
+}
+
+.langues
+{
+	right: 15px;
+	top: 25px;
+}
+
+.titre-principal
+{
+	margin-left: 10px; 
+}
+
+.titre-principal h1
+{
+	font-family: 'BallparkWeiner', serif;
+    font-size: 2.6em;
+    font-weight: normal;
+	color: #cc0099;
+	margin-bottom: 30px;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+
+.titre-principal h2
+{
+	font-family: Dayrom, serif;
+    font-size: 2.8em;
+    margin-top: 55px;
+    font-weight: bold;
+	color: #2b98ff;
+}
+
+/* Navigation */
+
+nav
+{
+	width: 870px;
+	height: 25px;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #969696;
+	border-radius: 0px 0px 14px 14px;
+	position: relative;
+	top: -20px;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+	display:inline-block;
+	padding-right: 100px;
+	margin-top: 2px;
+}
+
+nav a
+{
+	font-size: 1em;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	text-decoration: underline;
+	color: white;
+}
+
+/* Corps */
+
+section
+{
+	width: 950px;
+	position: relative;
+}
+
+article, aside
+{
+    display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+}
+
+article
+{
+	width: 550px;
+	margin: 25px 50px 0px 5px;
+	padding: 0px 15px 8px 10px;
+}
+
+article h1
+{
+	margin-left: 30px;
+}
+
+article p
+{
+	font-size: 0.9em;
+}
+
+
+#adresse article, #adresse div /*début partie adresse*/
+{
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+}
+
+#adresse article
+{
+	margin: 10px 50px 60px 5px;
+	width: 300px;
+}
+
+#adresse div
+{
+	position: absolute;
+	right: 45px;
+	top: 30px;
+	text-align: center;
+}
+
+.titre_adresse
+{
+	font-size: 1.2em;
+	text-decoration: underline;
+	font-family: Dayrom, serif;
+}
+
+#contact p /*début partie contacts*/
+{
+	display: inline-block;
+	padding: 0px 20px 20px 50px;
+	margin: 0px 20px 20px 50px
+}
+
+.contact
+{
+	font-family: Dayrom, serif;
+	font-size: 1.1em;
+	text-decoration: underline;
+}
+
+.mail
+{
+	position: absolute;
+	right: 140px;
+	top: 80px;
+}
+
+aside /*aside page principale*/
+{
+	position: relative;
+	width: 250px;
+	background-color: #969696;
+	box-shadow: 0px 4px 5px 0px #1c1a19;
+	border-radius: 12px;
+	padding: 10px;
+	margin-top: 25px;
+	margin-left: 20px;
+	color: white;
+	font-size: 0.9em;
+}
+
+aside a
+{
+	color: white;
+	text-decoration: underline;
+}
+
+
+#separation /*images de transition page principale*/
+{
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#separation img
+{
+	margin: 50px;
+}
+
+
+
+
+#photos_combegrand /*photo page principale*/
+{
+	background-color: #969696;
+	border-radius: 30px 30px 0px 0px;
+	margin-top: 15px;
+}
+
+#photos_combegrand h1
+{
+	margin-left: 40px;
+	padding-top: 20px;
+	color: white;
+}
+
+#photos_combegrand img
+{
+	display: inline-block;
+	margin: 0px 0px;
+	opacity: 0.6;
+}
+
+#photos_combegrand img:hover
+{
+	display: inline-block;
+	box-shadow: 0px 8px 10px 0px #1c1a19;
+	opacity: 1;
+}
+
+/* pied de page */
+
+footer
+{
+	width: 942px;
+	margin-top: 50px;
+	padding: 4px;
+	font-size: 1.2em;
+	color: #2683ff;
+	background-color: rgba(24,24,24,0.3);
+	border-radius: 10px 10px 0px 0px;
+	position: relative;
+	text-align: center;
+}
+	
+footer a
+{
+	color: #3b599a;
+	text-decoration: underline;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
