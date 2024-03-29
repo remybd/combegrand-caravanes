@@ -18,7 +18,7 @@
     --price-shadow: 0px 0px 40px 10px #0000000D;
 
     --default-space-between: 80px;
-
+    --section-image-width: 552px;
 }
 
 body {
@@ -132,13 +132,11 @@ a:hover {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: var(--default-space-between);
-
-    --box-width: 552px;
 }
 
 .subsection {
-    width: var(--box-width);
-    height: var(--box-width);
+    width: var(--section-image-width);
+    height: var(--section-image-width);
 }
 
 .section-title {
